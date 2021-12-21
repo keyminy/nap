@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.my.mapper.BoardMapper">
+	<select id="getList" resultType="boardVO">
+		select * from r_board order by idx desc
+	</select>
+	
+	<insert id="insert" parameterType="boardVO">
+		insert into r_board(title,contents,count,writer)
+		 values(#{title},#{contents},#{count},#{writer})
+	</insert>
+	
+	<select id="read" parameterType="Integer" resultType="boardVO">
+		select * from r_board where idx=#{idx}
+	</select>
+	
+	<delete id="delete" parameterType="Integer">
+		delete from r_board where idx=#{idx}
+	</delete>
+	
+	<update id="update" parameterType="boardVO">
+		update r_board set title=#{title}, contents=#{contents}
+		 where idx=#{idx}
+	</update>
+	
+	<update id="count" parameterType="Integer">
+		update r_board set count=count+1 where idx=#{idx}
+	</update>
+</mapper>
