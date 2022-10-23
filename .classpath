@@ -9,8 +9,13 @@
 	<classpathentry kind="lib" path="C:/Users/1/Downloads/gson-2.8.5.jar"/>
 	<classpathentry kind="lib" path="C:/Users/1/Downloads/json-20180813.jar"/>
 	<classpathentry kind="lib" path="C:/Users/1/Downloads/jsoup-1.11.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/1/Downloads/commons-codec-1.11.jar"/>
-	<classpathentry kind="lib" path="C:/Users/1/Downloads/commons-collections4-4.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/1/Downloads/poi-4.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1/Downloads/commons-codec-1.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1/Downloads/commons-collections4-4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1/Downloads/poi-4.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1/Downloads/poi-ooxml-4.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1/Downloads/xmlbeans-3.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1/Downloads/commons-compress-1.19.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1/Downloads/dom4j-2.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1/Downloads/poi-ooxml-schemas-4.1.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

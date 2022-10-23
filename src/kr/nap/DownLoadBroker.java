@@ -9,6 +9,7 @@ import java.net.URL;
 public class DownLoadBroker implements Runnable{
 	private String address;
 	private String fileName;
+	//String myPath = "D:\\eclipse\\workspace\\JavaTPCProject\\";
 	
 	public DownLoadBroker(String address, String fileName) {
 		super();
