@@ -122,7 +122,9 @@ public class ExcelDAO {
         	String imgURL = imgTag.substring(0,imgTag.indexOf("<author>"));
             System.out.println(imgURL);
 			//String fileName = imgURL.substring(imgURL.indexOf(".",imgURL.lastIndexOf("/")+1)+1);
-            String fileName = imgURL.substring(imgURL.indexOf("/")+1);
+            //2번쨰 .부터 나오게 -> 안되네..
+            String fileName = imgURL.substring(imgURL.lastIndexOf(".",imgURL.lastIndexOf('.')-1)+1);
+            //String fileName = "20230207163634.jpg";
 			//String fileName = imgURL;
 			System.out.println("fileName : " + fileName);
             vo.setImgurl(fileName);   

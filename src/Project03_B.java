@@ -24,8 +24,10 @@ public class Project03_B {
 			is.close();
 			/* Excel에 이미지를 그리기위해, anchor잡기 */
 			CreationHelper helper = wb.getCreationHelper();
+			//sheet에 실제 이미지 그리기 위해 Drawing객체 생성
 			Drawing drawing = sheet.createDrawingPatriarch();
 			ClientAnchor anchor = helper.createClientAnchor();
+			
 			anchor.setCol1(1);
 			anchor.setRow1(2);
 			
@@ -36,7 +38,7 @@ public class Project03_B {
 			Picture pict = drawing.createPicture(anchor, pictureIdx); //anchor위치에, 해당 pictureIdx 그리기
 			
 			/* cell을 생성해, 이미지를 잘 볼 수 있게, cell의 width와 height 조정 */
-			Cell cell = sheet.createRow(2).createCell(1);
+			Cell cell = sheet.createRow(2).createCell(1); //2행 1열 cell에 이미지 생성
 			//set width n character widths = count characters * 256
 			int widthUnits = 20 * 256;//20px정도..
 			sheet.setColumnWidth(1, widthUnits);

@@ -9,7 +9,7 @@ import java.net.URL;
 public class DownLoadBroker implements Runnable{
 	private String address;
 	private String fileName;
-	//String myPath = "D:\\eclipse\\workspace\\JavaTPCProject\\";
+	String myPath = "D:\\eclipse\\workspace\\JavaTPCProject\\";
 	
 	public DownLoadBroker(String address, String fileName) {
 		super();
@@ -21,7 +21,7 @@ public class DownLoadBroker implements Runnable{
 	public void run() {
 		//run에서 다운로드 작업 수행
 		try {
-			FileOutputStream fos = new FileOutputStream(fileName);//파일이름으로 파일생성
+			FileOutputStream fos = new FileOutputStream(this.fileName);//파일이름으로 파일생성
 			BufferedOutputStream bos = new BufferedOutputStream(fos);//fos랑 버퍼 연결
 			
 			URL url = new URL(address);//주소 정보와 연결
